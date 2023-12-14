@@ -1,0 +1,16 @@
+header {
+    margin-left: 20px;
+    background-color: rgb(94, 98, 148);
+    height: 250px;
+}
+
+nav, li, a{
+    display: inline;
+    padding: 0;
+    border: none;
+    margin-right: 50px;
+    text-decoration: none;
+    font-weight: 500;
+    text-transform: none;
+    font: normal 19px/23px Ubuntu;
+}
