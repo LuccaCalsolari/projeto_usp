@@ -1,7 +1,8 @@
 header {
-    margin-left: 20px;
-    background-color: rgb(94, 98, 148);
-    height: 250px;
+    background-color: white;
+    height: 230px;
+    max-width: 100%;
+    margin-bottom: -110px;
 }
 
 nav, li, a{
@@ -13,4 +14,15 @@ nav, li, a{
     font-weight: 500;
     text-transform: none;
     font: normal 19px/23px Ubuntu;
+    text-align: center;
+}
+
+.logo_header {
+    margin-top: 15px;
+    margin-left: 50px;
+    margin-bottom: -10px;
+}
+
+.nav_home {
+    margin-left: -25px;
 }

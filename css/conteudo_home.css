@@ -1,0 +1,28 @@
+.container_home {
+    background-image: url(/img/logo_projeto_usp.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 500px;
+    background-size: 100% 100%;
+}
+
+.titulo_home {
+    font-size: 120px;
+    font: 500 162px/140px 'Ubuntu',sans-serif;
+    color: #352a2a;
+    letter-spacing: -5px;
+    position: relative;
+    margin-left: 190px;
+    padding: 100px 0;
+    border: 0;
+    margin-bottom: -65px;
+}
+
+.link_titulo_home {
+    position: relative;
+    margin-left: 215px;
+    font: 500 19px/1.2em 'Ubuntu',sans-serif;;
+    color: #352a2a;
+    text-decoration: none;
+    padding: 0;
+}
