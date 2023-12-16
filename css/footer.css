@@ -1,0 +1,15 @@
+footer {
+    padding: 15px 0 10px;
+    background-color: bisque;
+    overflow: auto;
+}
+
+.footer_conteudo {
+    padding: 5px;
+    margin: 5px 100px;
+    border: 0;
+    float: left;
+    display: inline;
+    align-items: center;
+    position: relative;    
+}
