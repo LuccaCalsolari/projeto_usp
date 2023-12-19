@@ -1,28 +1,53 @@
 .container_home {
-    background-image: url(/img/logo_projeto_usp.png);
-    background-position: center center;
-    background-repeat: no-repeat;
-    height: 500px;
-    background-size: 100% 100%;
+    padding: 100px 55px;
+    border: none;
+    margin: 3px 0 0 0;
+    background-color: aqua;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .titulo_home {
+    padding: 0;
+    border: none;
+    margin: 0 0 30px;
     font-size: 120px;
     font: 500 162px/140px 'Ubuntu',sans-serif;
-    color: #352a2a;
+    color: #fff;
     letter-spacing: -5px;
     position: relative;
-    margin-left: 190px;
-    padding: 100px 0;
-    border: 0;
-    margin-bottom: -65px;
+    left: 130px;
 }
 
 .link_titulo_home {
-    position: relative;
-    margin-left: 215px;
-    font: 500 19px/1.2em 'Ubuntu',sans-serif;;
-    color: #352a2a;
-    text-decoration: none;
+    font: 500 19px/1.2em 'Ubuntu',sans-serif;
+    color: cadetblue;
     padding: 0;
+    border: none;
+    text-decoration: none;
+    text-transform: none;
+    letter-spacing: 0;
+    position: relative;
+    left: 160px;
+    font-size: 18px;
+    font-weight: 200;
+    color: #a9acae;
+}
+
+.link_titulo_home::after {
+    content: '*';
+    font: 32px/1.2em FontAwesome;
+    color: #a9acae;
+    margin-left: 10px;
+    vertical-align: middle;
+    transition: all .3s ease 0s;
+}
+ 
+.link_titulo_home:hover {
+    color: red;
+}
+
+.link_titulo_home:active {
+    color: blue;
 }

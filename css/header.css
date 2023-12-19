@@ -1,28 +1,56 @@
 header {
-    background-color: white;
-    height: 230px;
-    max-width: 100%;
-    margin-bottom: -110px;
-}
-
-nav, li, a{
-    display: inline;
     padding: 0;
     border: none;
-    margin-right: 50px;
-    text-decoration: none;
-    font-weight: 500;
-    text-transform: none;
-    font: normal 19px/23px Ubuntu;
-    text-align: center;
+    margin: 0 0 0 0;
+    background-color: rgb(141, 79, 79);
 }
 
 .logo_header {
-    margin-top: 15px;
-    margin-left: 50px;
-    margin-bottom: -10px;
+    padding: 15px 0 0 15px;
+    border: none;
+    position: relative;
+    left: 25px;
 }
 
-.nav_home {
-    margin-left: -25px;
+nav {
+    padding: 0px 5px 5px 5px;
+    margin: 0;
+    margin-top: -20px;
+    border: none;
+    text-align: center;
+}
+
+.nav_li {
+    padding: 0;
+    border: none;
+    display: inline;
+    margin-right: 50px;
+    text-decoration: none;
+    text-transform: none;
+    text-align: center;
+    position: relative;
+    font-weight: 500;
+    font: normal 19px/23px Ubuntu;
+    color: black;
+    letter-spacing: 0;
+}
+
+.nav_li:hover {
+    border-bottom: 5px solid rgb(123, 47, 47);
+    border-width: 5px;
+}
+
+.nav_li:active {
+    border-bottom: 5px solid red;
+    border-width: 5px;
+}
+
+.nav_li::before {
+    content: '';
+    width: 1px;
+    height: 24px;
+    background: #eaebeb;
+    position: absolute;
+    top: 0;
+    left: -26px;
 }
