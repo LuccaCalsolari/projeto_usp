@@ -1,56 +1,37 @@
-header {
-    padding: 0;
-    border: none;
-    margin: 0 0 0 0;
-    background-color: rgb(141, 79, 79);
-}
-
-.logo_header {
-    padding: 15px 0 0 15px;
-    border: none;
-    position: relative;
-    left: 25px;
-}
-
-nav {
-    padding: 0px 5px 5px 5px;
+* {
     margin: 0;
-    margin-top: -20px;
-    border: none;
-    text-align: center;
-}
-
-.nav_li {
     padding: 0;
-    border: none;
-    display: inline;
-    margin-right: 50px;
-    text-decoration: none;
-    text-transform: none;
-    text-align: center;
-    position: relative;
+}
+
+.cabecalho {
+    display: flex;
+    width: 100%;
+    height: 25%;
+    background-color: white;
+}
+
+.cabecalho__logo {
+    height: 90%;
+    width: 12%;
+    margin: 0.5% 1%;
+}
+
+.cabecalho__menu {
+    display: flex;
+    align-items: center;
+    width: 70%;
+    justify-content: space-around;
+    padding-bottom: 0.7%;
+}
+
+.cabecalho__menu__link {
+    list-style: none; 
+    align-self: flex-end;
+    font: normal 22px/23px Ubuntu;
     font-weight: 500;
-    font: normal 19px/23px Ubuntu;
-    color: black;
-    letter-spacing: 0;
+    color: #494d52;
 }
 
-.nav_li:hover {
-    border-bottom: 5px solid rgb(123, 47, 47);
-    border-width: 5px;
-}
-
-.nav_li:active {
-    border-bottom: 5px solid red;
-    border-width: 5px;
-}
-
-.nav_li::before {
-    content: '';
-    width: 1px;
-    height: 24px;
-    background: #eaebeb;
-    position: absolute;
-    top: 0;
-    left: -26px;
+.cabecalho__menu__link:hover {
+    color: blueviolet;
 }

@@ -1,14 +1,26 @@
-footer {
-    padding: 69px 0 94px;
-    background-color: bisque;
-    overflow: auto;
+.rodape {
+    display: flex;
+    justify-content: space-around;
+    gap: 0.2%;
+    position: relative;
+    left: 4%;
+    padding-top: 2%;
+    width: 100%;
 }
 
-.footer_conteudo {
-    padding: 5px;
-    border: none;
-    margin: 0 200px 0 0;
-    float: left;
-    position: relative;
-    left: 190px;
+
+.rodape__conteudo {
+    list-style: none;
+}
+
+.rodape__conteudo__titulo {
+    padding-bottom: 5%;
+    font: 500 16px/1.2em 'Ubuntu', sans-serif;
+    color: #fff;
+}
+
+.rodape__conteudo__item {
+    padding: 1%;
+    font: 300 13px/20px 'Ubuntu', sans-serif;
+    color: #a4b2c8;
 }

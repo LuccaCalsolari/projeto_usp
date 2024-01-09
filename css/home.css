@@ -1,0 +1,28 @@
+.container__home {
+    display: flex;
+    flex-direction: column;
+    height: 60%;
+    background-color: rgb(56, 85, 188);
+    align-items: center;
+}
+
+.container__home__titulo {
+    font: 500 162px/140px 'Ubuntu', sans-serif;
+    color: #fff;
+    letter-spacing: -5px;
+    font-size: 120px;
+    position: relative;
+    right: 9%;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-top: 4%;
+}
+
+.container__home__link {
+    font: 500 23px/1.2em 'Ubuntu', sans-serif;
+    color: #fcfeff;
+    align-content: flex-start;
+    position: relative;
+    right: 28%;
+    padding-top: 1%;
+}
