@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+header , nav, main, aside, footer {
+    background: #a1a1a1;
+    display: flex;
+    margin: 3px;
+}
+
+header {
+    flex: 1 1 100vw;
+    height: 200px;
+}
+
+header {
+    flex: 0 1 200px;
+}
+
+#logo {
+    flex: 0 1 200px;
+    height: 200px;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+
+#open_menu, #close_menu {
+    border: none;
+    background: none;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0px 5px 0px 5px;
+    cursor: pointer;
+    display: none;
+}
+
+nav {
+    flex: 1 1 200px;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+nav a {
+    margin: 3%;
+    font-size: 20pt;
+    z-index: 1;
+}
+
+a {
+    text-decoration: none;
+}
+
+main {
+    flex: 20 1 500px;
+    height: calc(100vh - 324px);
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    background-image: url(/img/fundo_projeto_usp.JPEG);
+    background-size: cover; 
+    background-position: center 30%; 
+    height: 600px;
+    overflow: hidden;
+    position: relative;
+}
+
+main::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 255, 0.3);
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+  }
+
+
+
+#main_titulo, #main_link {
+    margin: 3px;
+    flex: 1 1 100vw;
+    margin-left: 200px;
+}
+
+#main_titulo {
+    font: 500 162px/140px 'Ubuntu', sans-serif;
+}
+
+#main_link {
+    font: 500 28px/1.2em 'Ubuntu', sans-serif;
+    max-width: 200px;
+    z-index: 1;
+}
+
+aside {
+    flex: 1 1 100vw;
+    height: 400px;
+}
+
+aside figure {
+    background-color: aquamarine;
+    margin-left: 200px;
+}
+       
+#aside_a {
+    background-color: bisque;
+}
+
+
+#aside_img {
+    flex: 0 1 200px;
+    height: 180px;
+    border-style: solid;
+    border-width: medium;
+    border-color: cadetblue;
+    border-radius: 5px;
+}
+
+
+footer {
+    flex: 1 1 100vw;
+    height: 100px;
+}
+
+.footer_coluna {
+    margin-left: 200px;
+    margin-top: 25px;
+}
+
+@media only screen and (max-width: 717px){
+    #open_menu, #close_menu {
+        display: block;
+    }
+
+    #open_menu {
+        margin-left: auto;
+        z-index: 1;
+    }
+
+    #close_menu {
+        position: fixed;
+        right: 15px;
+        top: 15px;
+        z-index: 1;
+    }
+
+
+    nav {
+        position: fixed;
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(255, 255, 255, 0.8);
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        display: none;
+        opacity: 0;
+        transition: 0.3s;
+        z-index: 1;
+    }
+}
+
+@media only screen and (max-width: 923px) {
+    main {
+        height: calc(100vh - 230px);
+    }
+
+    #main_titulo{
+        margin-left: 0;
+        font-size: 90px;
+    }
+
+    #main_link {
+        margin-left: 0;
+        font-size: 18px;
+    }
+
+    aside figure {
+        margin-left: 0;
+    }
+}
+

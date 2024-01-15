@@ -3,66 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/header.css">
-    <link rel="stylesheet" href="/css/body.css">
-    <link rel="stylesheet" href="/css/home.css">
-    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/styles.css">
     <title>Conexão Global</title>
 </head>
 
-<body class="main">
-
-    <header class="cabecalho">
-
-        <img class="cabecalho__logo" src="/img/logo_projeto_usp_uni.png" alt="Logo Usp">
-
-       
-         <ul class="cabecalho__menu">
-            <li class="cabecalho__menu__link"><a href="index.html" class="cabecalho__menu__link">Home</a></li>
-            <li class="cabecalho__menu__link"><a href="" class="cabecalho__menu__link">Sobre Nós</a></li>
-            <li class="cabecalho__menu__link"><a href="" class="cabecalho__menu__link">Missão</a></li>
-            <li class="cabecalho__menu__link"><a href="" class="cabecalho__menu__link">Documentos</a></li>
-            <li class="cabecalho__menu__link"><a href="" class="cabecalho__menu__link">Projetos</a></li>
-            <li class="cabecalho__menu__link"><a href="" class="cabecalho__menu__link">Contato</a></li>
-        </ul>
+<body>
+    
+    <header>
         
+        <img src="/img/logo_projeto_usp_escuro.png" alt="logo conexão global" id="logo">
+
+        <button id="open_menu">&#9776;</button>
+
+        <nav id="menu">
+
+            <button id="close_menu">X</button>
+            <a href="#index.html">Home</a>
+            <a href="#">Sobre Nós</a>
+            <a href="#">Missão</a>
+            <a href="#">Projetos</a>
+            <a href="#">Documentos</a>
+            <a href="#">Contato</a>
+
+        </nav>
+
     </header>
 
-    <section class="container__home">
+    <main>
+        
+        <h1 id="main_titulo">Conexão<br>Global</h1>
 
-        <h1 class="container__home__titulo">Conexão Global</h1>
+        <a href="#" id="main_link">Saiba Mais</a>
 
-        <a href="" class="container__home__link">Saiba Mais</a>
+    </main>
 
-    </section>
-    
-    <footer class="rodape">
-        <ul class="rodape__conteudo">
+    <aside>
 
-            <h4 class="rodape__conteudo__titulo">Entre em Contato</h4>
+        <figure>
+            <a href="#" id="aside_a">
+                <img id="aside_img" src="/img/quem_somos_projeto_usp.JPEG" alt="">
+            </a>
+            <p id="aside_p">Conheça nossa equipe 
+            </p>
 
-            <li class="rodape__conteudo__item"><em>telefone: xx xxxxx xxxx</em></li>
-            <li class="rodape__conteudo__item"><em>telefone: xx xxxxx xxxx</em></li>
-            <li class="rodape__conteudo__item"><em>Fax: +1 504 889 9898</em></li>
-            <li class="rodape__conteudo__item"><em>E-mail: mail@demolink.org</em></li>
+            <button id="aside_button"> Saiba mais</button>
+        </figure>
 
-        </ul>
+        <figure>
+            <a href="#" id="aside_a">
+                <img id="aside_img" src="/img/quem_somos_projeto_usp.JPEG" alt="">
+            </a>
+            <p id="aside_p">Conheça nossa equipe 
+            </p>
 
-        <ul class="rodape__conteudo">
+            <button id="aside_button"> Saiba mais</button>
+        </figure>
 
-            <h4 class="rodape__conteudo__titulo">Localização</h4>
+    </aside>
 
-            <li class="rodape__conteudo__item"><em>Mamoré 8092 Centro</em></li>
-            <li class="rodape__conteudo__item"><em>Cep: xxxxx-xxx</em></li>
+    <footer>
+        <div class="footer_coluna">
+            <h4>Contato</h4>
+            <p><em>E-mail : ups@hotmail.com</em></p>
+            <p><em>Telefone : (11) xxxxx-xxxx </em></p>
+        </div>
 
-        </ul>
+        <div class="footer_coluna">
+            <h4>Endereço</h4>
+            <p><em>Avenida Brasilandia 84</em></p>
+            <p><em>CEP : xxxxx-xxx </em></p>
+        </div>
 
-        <ul class="rodape__conteudo">
-             <h4 class="rodape__conteudo__titulo">Redes Sociais</h4>
+        <div class="footer_coluna">
+            <h4>Redes Sociais</h4>
+        </div>
 
-        </ul>
     </footer>
 
+    <script src="/js/script.js"></script>
 </body>
-
 </html>
