@@ -5,7 +5,6 @@
 
 
 header , nav, main, aside, footer {
-    background: #a1a1a1;
     display: flex;
     margin: 3px;
 }
@@ -13,6 +12,7 @@ header , nav, main, aside, footer {
 header {
     flex: 1 1 100vw;
     height: 200px;
+    background-color: aliceblue;
 }
 
 header {
@@ -42,13 +42,21 @@ nav {
     flex: 1 1 200px;
     align-items: flex-end;
     justify-content: flex-start;
+    background-color: aliceblue;
 }
 
 nav a {
     margin: 3%;
-    font-size: 20pt;
+    text-decoration: none;
+    font-weight: 500;
+    color: #494d52;
+    font: normal 22px/23px Ubuntu;
     z-index: 1;
 }
+
+nav a:hover {
+    color: red;
+} 
 
 a {
     text-decoration: none;
@@ -63,7 +71,7 @@ main {
     background-image: url(/img/fundo_projeto_usp.JPEG);
     background-size: cover; 
     background-position: center 30%; 
-    height: 600px;
+    height: 650px;
     overflow: hidden;
     position: relative;
 }
@@ -75,7 +83,7 @@ main::before {
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: rgba(0, 0, 255, 0.3);
+    background-color: rgba(3, 3, 76, 0.4);
     box-sizing: border-box;
     width: 100%;
     height: 100%;
@@ -91,22 +99,31 @@ main::before {
 
 #main_titulo {
     font: 500 162px/140px 'Ubuntu', sans-serif;
+    color: #fff;
+    z-index: 1;
 }
 
 #main_link {
+    text-decoration: none;
     font: 500 28px/1.2em 'Ubuntu', sans-serif;
+    color: #4c4d4f;
     max-width: 200px;
     z-index: 1;
+}
+
+#main_link:hover {
+    color: red;
 }
 
 aside {
     flex: 1 1 100vw;
     height: 400px;
+    background-color:#262626; 
 }
 
 aside figure {
-    background-color: aquamarine;
     margin-left: 200px;
+    
 }
        
 #aside_a {
@@ -122,6 +139,7 @@ aside figure {
     border-color: cadetblue;
     border-radius: 5px;
 }
+
 
 
 footer {
@@ -164,7 +182,7 @@ footer {
         display: none;
         opacity: 0;
         transition: 0.3s;
-        z-index: 1;
+        z-index: 2;
     }
 }
 
