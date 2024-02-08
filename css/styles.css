@@ -7,7 +7,7 @@ body {
     background-color: #171729;
 }
 
-header , nav, #main_home, #main_sobre, #main_missao, #main_projetos, #aside_home, #aside_sobre, #aside_missao, footer {
+header , nav, #main_home, #main_sobre, #main_missao, #main_projetos, #main_documentos, #aside_home, #aside_sobre, #aside_missao, footer {
     display: flex;
     margin: 3px;
 }
@@ -39,6 +39,7 @@ header {
     padding: 0px 5px 0px 5px;
     cursor: pointer;
     display: none;
+    
 }
 
 nav {
@@ -65,7 +66,7 @@ a {
     text-decoration: none;
 }
 
-#main_home, #main_sobre, #main_missao, #main_projetos {
+#main_home, #main_sobre, #main_missao, #main_projetos, #main_documentos {
     flex: 20 1 500px;
     height: calc(100vh - 324px);
 }
@@ -89,7 +90,7 @@ a {
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: rgba(3, 3, 76, 0.4);
+    background-color: rgba(2, 2, 47, 0.4);
     box-sizing: border-box;
     width: 100%;
     height: 100%;
@@ -140,7 +141,21 @@ a {
     margin-top: 0;
 }
 
-#main_sobre h2 {
+#img_projetos {
+    height: 250px;
+    margin: 5px;
+    position: relative;
+    left: 100px;
+    bottom: 50px;
+}
+
+#main_projetos div p {
+    position: relative;
+    left: 100px;
+    bottom: 50px;
+}
+
+#main_sobre h2, #aside_sobre h2, #main_documentos h2 {
     font: 45px/1.2em 'Ubuntu', sans-serif;
     color: #fff;
     align-self: flex-start;
@@ -148,9 +163,28 @@ a {
     width: 100%;
     margin-bottom: -15px;
 }
+#main_documentos{
+    flex-wrap: wrap;
+    height: fit-content;
+}
+
+#main_documentos embed {
+    margin: 50px;
+    margin-left: 200px;
+}
+
+#main_documentos h2 {
+    margin-left: 180px;
+}
+
+#aside_sobre h2 {
+    font: 40px/1.2em 'Ubuntu', sans-serif;
+    margin-left: -30px;
+    margin-bottom: 40px;
+}
 
 #main_sobre p {
-    font: normal 18px/23px Ubuntu;
+    font: 18px/1.2em 'Ubuntu', sans-serif;
     line-height: 20px;
     color: #fff;
     width: 50%;
@@ -177,12 +211,13 @@ a {
 }
 
 #main_missao p {
-    font: normal 22px/23px Ubuntu;
+    font: 18px/1.2em 'Ubuntu', sans-serif;
     line-height: 20px;
     color: #fff;
     width: 60%;
     text-align: justify;
 }
+
 #main_projetos {
     flex: 20 1 500px;
     height: 500px;
@@ -203,13 +238,25 @@ a {
     color: #fff;
 }
 
-#main_projetos p {
-    font: normal 18px/23px Ubuntu;
+#main_projetos p, #main_projetos a {
+    font: 18px/1.2em 'Ubuntu', sans-serif;
     line-height: 20px;
     width: 65%;
     color: #fff;
     text-align: justify;
 }
+
+#main_projetos a {
+    font: 18px/1.2em 'Ubuntu', sans-serif;
+    line-height: 20px;
+    width: 40%;
+    color: blue;
+    text-align: justify;
+}
+#main_projetos a:hover {
+    color: red;
+} 
+
 
 
 #aside_home, #aside_sobre, #aside_missao {
@@ -219,12 +266,24 @@ a {
 }
 
 aside figure {
-    margin-left: 260px;
-    max-width: 340px;
+    margin: 5px;
+    margin-left: 80px;
+    max-width: 400px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
+
+#aside_sobre figure {
+    margin: 40px;
+    margin-left: 0px;
+    max-width: 290px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
 
 #aside_img {
     flex: 0 1 auto;
@@ -235,12 +294,23 @@ aside figure {
     margin-top: 25px;
 }
 
-#aside_p {
+#aside_home figure {
+    text-align: center;
+}
+
+#aside_p, #aside_sobre figure p {
     color: #fff;
     flex-wrap: wrap;
-    font: normal 18px/23px Ubuntu;
+    font: 18px/1.2em 'Ubuntu', sans-serif;
     margin: 0;
     max-width: 290px;
+}
+
+#aside_sobre figure p, #aside_sobre figure a {
+    max-width: 280px;
+    position: relative;
+    right: 55px;
+    margin: 5px;
 }
 
 #aside_missao {
@@ -251,6 +321,9 @@ aside figure {
     margin-left: 240px;
 }
 
+#aside_sobre figure{
+    text-align: center;
+}
 
 #aside_missao img {
     height: 200px;
@@ -355,17 +428,40 @@ aside figure {
     width: 100%;
   }
 
+#aside_sobre {
+    flex: 20 1 500px;
+    height: fit-content;
+    flex-wrap: wrap;
+    box-sizing: border-box; 
+    margin-left: 240px;
+}
+
+  #foto_sobre {
+    height: 200px;
+    margin-right: 120px;
+    margin-top: 25px;
+  }
   
 footer {
     flex: 1 1 100vw;
     height: 100px;
-    background-color: aliceblue;
+    background-color: white;
     align-items: center;
     justify-content: space-around;
 }
 
 .footer_coluna {
     margin: 10px;
+}
+
+#logo_footer {
+    flex: 0 1 80px;
+    height: 80px;
+    background-color: aliceblue;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    box-sizing: border-box;
 }
 
 @media only screen and (max-width: 717px){
@@ -403,7 +499,7 @@ footer {
 }
 
 @media only screen and (max-width: 923px) {
-    #main_home, #main_sobre, #main_missao, #main_projetos {
+    #main_home, #main_sobre, #main_missao, #main_projetos, #main_documentos {
         height: calc(100vh - 230px);
     }
 
@@ -417,13 +513,17 @@ footer {
         font-size: 18px;
     }
 
-    #aside_home, #aside_missao {
+    #aside_sobre {
+        margin: 0;
+    }
+
+    #aside_home, #aside_missao, footer, #aside_sobre{
         max-width: 100%;
         flex-wrap: wrap;
         height: fit-content;
         justify-content: center;
     }
-
+    
     #aside_missao {
         margin-left: 0;
         text-align: center;
@@ -439,13 +539,13 @@ footer {
         margin-left: 0px;
     }
 
-    #main_sobre, #main_missao, #main_projetos{
+    #main_sobre, #main_missao, #main_projetos, #main_documentos, #aside_sobre {
         margin-left: 0;
         height: fit-content;
         justify-content: center;
     }
 
-    #main_sobre h2, #main_missao h2, #main_projetos h2 {
+    #main_sobre h2, #main_missao h2, #main_projetos h2, #aside_sobre h2, #main_documentos h2 {
         font-size: 35px;
         margin: 10px;
         text-align: center;
@@ -466,5 +566,12 @@ footer {
         width: 65%;
         margin: 15px;
     }
+
+    #logo_footer, #main_projetos div {
+        display: none;
+    }
+    
+    
+
 }
 
