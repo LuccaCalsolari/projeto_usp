@@ -250,11 +250,11 @@ a {
     font: 18px/1.2em 'Ubuntu', sans-serif;
     line-height: 20px;
     width: 40%;
-    color: blue;
+    color: #1f1faf;
     text-align: justify;
 }
 #main_projetos a:hover {
-    color: red;
+    color: #2b2be7;
 } 
 
 
@@ -277,13 +277,20 @@ aside figure {
 #aside_sobre figure {
     margin: 40px;
     margin-left: 0px;
-    max-width: 290px;
+    max-width: 250px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
 
+#aside_sobre figure a {
+    color: #1f1faf;
+}
+
+#aside_sobre figure a:hover {
+    color: #2b2be7;
+}
 
 #aside_img {
     flex: 0 1 auto;
